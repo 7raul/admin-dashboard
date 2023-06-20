@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://kit.fontawesome.com/b181487e59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">CodzSword</a>
+                </div>
+
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Pages
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-regular fa-user"></i>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-list"></i>
+                            Task
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link has-dropdown">
+                            <i class="fa-solid fa-user-gear"></i>
+                            Auth
+                        </a>
+                        
+                        <ul class="sidebar-dropdown">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    Login
+                                </a>
+                                <a href="#" class="sidebar-link">
+                                    Resgister
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-header">
+                        Tools & Components
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link has-dropdown">
+                            <i class="fa-regular fa-square-check"></i>
+                            Form Elements
+                        </a>
+                        
+                        <ul class="sidebar-dropdown">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">
+                                    Acordion
+                                </a>
+                                <a href="#" class="sidebar-link">
+                                    Tabs
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-regular fa-bell"></i>
+                            Notification
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="dashboard-navbar">
+                <button type="button" class="toggle-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+
+                <form action="#">
+                    <div class="nav-search">
+                        <input type="text" class="search-query" placeholder="Search...">
+                        <span class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <button class="btn" type="button">Search</button>
+                    </div>
+                </form>
+
+                <div class="navbar-content">
+                    <ul class="main-navbar">
+                        <li class="user-link">
+                            <a href="#" class="user-profile">
+                                <img src="img/27624620_912757832222616_8617175396135391712_o.png" alt="Profile" class="avatar">
+                            </a>
+                            <div class="user-link-dropdown">
+                                <a href="#" class="dropdown-item">Profile</a>
+                                <a href="#" class="dropdown-item">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="content">
+                <div class="dashboard-container">
+                    <h4>Admin Dashboard</h4>
+
+                    <div class="dashboard-row">
+                        <div class="dashboard-card">
+                            <div class="greeting">
+                                <div class="greeting-content">
+                                    <h3>Welcome back, Admin!</h3>
+                                    <p>CodzSword</p>
+                                </div>
+
+                                <div class="greeting-img">
+                                    <img src="img/Cool Kids - Study.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="revenue">
+                                <div class="revenue-info">
+                                    <h3>$ 24.000kz</h3>
+                                    <p>Total Earnings</p>
+                                    <div class="badge">
+                                        <span class="text-sucess-bg">+5.85%</span>
+                                        <span class="badge-text">Since last Month</span>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>Admin Dashboard Table</h4>
+                    <table id="posts">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%">Title</th>
+                                <th style="width: 50%">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Title 1</td>
+                                <td>Description 1</td>
+                            </tr>
+                            <tr>
+                                <td>Title 1</td>
+                                <td>Description 2</td>
+                            </tr>
+                            <tr>
+                                <td>Title 1</td>
+                                <td>Description 3</td>
+                            </tr>
+                            <tr>
+                                <td>Title 1</td>
+                                <td>Description 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+
+            <footer>
+                <div class="dashboard-container">
+                    <div class="dashboard-row">
+                        <div class="footer-content footer-brand">
+                            <a href="#">CodzSword</a>
+                        </div>
+
+                        <div class="footer-content footer-nav">
+                            <ul class="footer-link">
+                                <li class="footer-link-item">
+                                    <a href="#">Support</a>
+                                </li>
+                                <li class="footer-link-item">
+                                    <a href="#">Help Center</a>
+                                </li>
+                                <li class="footer-link-item">
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li class="footer-link-item">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--Theme Swhitch-->
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+</html>
